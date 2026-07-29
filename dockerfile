@@ -5,7 +5,7 @@ FROM golang:1.25-alpine AS golang-builder
 COPY --from=answer-builder /usr/bin/answer /usr/bin/answer
 
 RUN apk --no-cache add \
-    build-base git bash nodejs npm go && \
+    build-base git bash nodejs npm && \
     npm install -g pnpm@10.7.0
 
 RUN answer build \
@@ -22,8 +22,7 @@ LABEL maintainer="LabNelson"
 ARG TIMEZONE
 ENV TIMEZONE=${TIMEZONE:-"Europe/Berlin"}
 
-RUN apk update \
-    && apk --no-cache add \
+RUN apk --no-cache add \
         bash \
         ca-certificates \
         curl \
