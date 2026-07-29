@@ -112,4 +112,7 @@ To add a plugin: add specific path in dockerfile, push and see the completion of
 
 To change the plugin version: get the ne plugin-version ('git tag') and change it in dockerfile
 
+To change apache-answer version:
+change in dockerfile and tag in docker-build.yml
+
 To change building process, see [here](https://answer.apache.org/docs/plugins/#build-docker-image-with-plugin-from-answer-base-image).
