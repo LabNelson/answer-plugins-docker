@@ -1,4 +1,4 @@
-FROM apache/answer:v2.0.2
+FROM apache/answer:2.0.2
 
 RUN answer build \
     --with github.com/apache/answer-plugins/captcha-google-v2@v1.0.6 \
