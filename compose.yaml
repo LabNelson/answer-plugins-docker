@@ -1,0 +1,13 @@
+services:
+  answer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: labnelson/apache-answer-custom:local
+    container_name: community-test
+    restart: unless-stopped
+    volumes:
+      - answer_test_data:/data
+
+volumes:
+  answer_test_data:

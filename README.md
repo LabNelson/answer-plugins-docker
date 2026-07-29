@@ -96,4 +96,17 @@ Support for customizing the reviewer.
 Learn more about the plugin, please visit our [docs](https://answer.apache.org/docs/plugins).
 
 ## Build Docker Image with plugins
-Building the Answer docker image with plugins is easy, see [here](https://answer.apache.org/docs/plugins/#build-docker-image-with-plugin-from-answer-base-image).
+This fork delivers ready to go docker image to use in portainer. On Push the image will be build and can be tested with compose.yaml.
+The image in this repository includes the following plugins:
+- connector-github
+- cache-redis
+- searc-elasticsearch
+- reviewer-akismet
+
+Image:
+ghcr.io/labnelson/apache-answer:latest
+
+
+To add a plugin: add specific path in dockerfile, push and see the completion of building the image by github.
+
+To change building process, see [here](https://answer.apache.org/docs/plugins/#build-docker-image-with-plugin-from-answer-base-image).
