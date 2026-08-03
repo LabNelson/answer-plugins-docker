@@ -9,10 +9,9 @@ RUN apk --no-cache add \
     npm install -g pnpm@10.7.0
 
 RUN answer build \
-    --with github.com/apache/answer-plugins/captcha-google-v2@v1.0.6 \
-    --with github.com/apache/incubator-answer-plugins/connector-github@v1.2.9 \
+    --with github.com/apache/answer-plugins/connector-github@1.2.11 \
 	--with github.com/apache/answer-plugins/cache-redis@v1.3.1 \
-	--with github.com/apache/incubator-answer-plugins/search-elasticsearch@v1.2.9 \
+	--with github.com/apache/answer-plugins/search-elasticsearch@1.2.11 \
 	--with github.com/apache/answer-plugins/reviewer-akismet@v1.0.6 \
     --output /usr/bin/new_answer
 

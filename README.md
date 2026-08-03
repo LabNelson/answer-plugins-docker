@@ -98,14 +98,13 @@ Learn more about the plugin, please visit our [docs](https://answer.apache.org/d
 ## Build Docker Image with plugins
 This fork delivers ready to go docker image to use in portainer. On Push the image will be build and can be tested with compose.yaml.
 The image in this repository includes the following plugins:
-- captcha-google-v2
 - connector-github
 - cache-redis
 - searc-elasticsearch
 - reviewer-akismet
 
 Image:
-ghcr.io/labnelson/apache-answer:latest
+ghcr.io/labnelson/apache-answer:v2.0.2
 
 
 To add a plugin: add specific path in dockerfile, push and see the completion of building the image by github.
