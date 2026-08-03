@@ -105,7 +105,7 @@ The image in this repository includes the following plugins:
 - reviewer-akismet
 
 Image:
-ghcr.io/labnelson/apache-answer:latest
+ghcr.io/labnelson/apache-answer:v2.0.2
 
 
 To add a plugin: add specific path in dockerfile, push and see the completion of building the image by github.
