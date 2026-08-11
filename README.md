@@ -102,6 +102,9 @@ The image in this repository includes the following plugins:
 - cache-redis
 - searc-elasticsearch
 - reviewer-akismet
+- editor-formula
+- editor-stacks
+- embed-basic
 
 Image:
 ghcr.io/labnelson/apache-answer:v2.0.2

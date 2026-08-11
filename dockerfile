@@ -10,9 +10,13 @@ RUN apk --no-cache add \
 
 RUN answer build \
     --with github.com/apache/answer-plugins/connector-github@v1.2.11 \
+	--with github.com/apache/answer-plugins/connector-apache@v1.0.5 \
 	--with github.com/apache/answer-plugins/cache-redis@v1.3.1 \
 	--with github.com/apache/answer-plugins/search-elasticsearch@v1.2.11 \
 	--with github.com/apache/answer-plugins/reviewer-akismet@v1.0.6 \
+	--with github.com/apache/answer-plugins/editor-formula@v1.2.15 \
+	--with github.com/apache/answer-plugins/editor-stacks@v0.0.0-20260723022723-27f129f9ef49 \
+	--with github.com/apache/answer-plugins/embed-basic@v1.1.5 \
     --output /usr/bin/new_answer
 
 FROM alpine
